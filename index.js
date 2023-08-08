@@ -12,11 +12,11 @@ const PORT = process.env.PORT || 8000;
 
 
 // middleware
-app.use(cors({origin : ["http//localhost:8000","https://taskmanagement.vercel.com"]}));
+app.use(cors({origin : ["http//localhost:8000","https://taskmngt.onrender.com/"]}));
 app.use(morgan('tiny'));
 app.use(express.json());
 app.use(cookieParser());
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
 // routes
 app.use('/api', allRoutes);
 
